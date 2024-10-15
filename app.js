@@ -1,5 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const FONT = '16px Arial';
+const SCORE_COLOR = '#431e35';
 
 canvas.height = 500;
 canvas.width = 500;
@@ -29,8 +31,8 @@ function keyUpHandler(e) {
 let score = 0;
 
 function drawScore() {
-        ctx.font = '16px Arial';
-        ctx.fillStyle = '#431e35';
+        ctx.font = FONT;
+        ctx.fillStyle = SCORE_COLOR;
         ctx.fillText("Score: " + score, 8, 20);
 }
 
